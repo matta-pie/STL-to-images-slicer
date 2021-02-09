@@ -1,4 +1,8 @@
 # GLOBAL VARIABLES
+import pywavefront
+import numpy as np
+from PIL import Image
+from PIL import ImageDraw
 # tuning general parameters
 scale = 1000
 image_padding = 100
@@ -7,7 +11,7 @@ y_slice_step = 0.01
 y_slice_num = round(1/y_slice_step)
 line_width = 5
 salto = 3
-model = pywavefront.Wavefront('bladdermodel_cm4.obj', collect_faces=True) #select which model you want to perform the strategy with
+model = pywavefront.Wavefront('samy.obj', collect_faces=True) #select which model you want to perform the strategy with
 
 border = []
 border2 = []
